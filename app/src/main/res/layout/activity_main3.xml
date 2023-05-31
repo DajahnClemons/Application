@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="201dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_btn"
+        android:id="@+id/enter_btn"
         android:layout_width="284dp"
         android:layout_height="42dp"
         android:layout_margin="20dp"
