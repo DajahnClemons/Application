@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="40dp"
     tools:context=".MainActivity2"
-    android:background="@drawable/SocialSync">
+    android:background="@drawable/socialsync">
 
     <EditText
         android:id="@+id/username_et"
@@ -19,6 +19,7 @@
         android:drawableStart="@drawable/ic_user"
         android:drawablePadding="12dp"
         android:ems="10"
+        android:inputType="text"
         android:hint="Username"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,15 +46,18 @@
         app:layout_constraintTop_toBottomOf="@+id/username_et"/>
 
     <TextView
+        android:id="@+id/signin_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signin_tv"
+        android:layout_margin="50dp"
+        android:gravity="center"
         android:text="Sign In"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold"
-        android:layout_margin="50dp"
-        android:gravity="center"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/login_btn"
@@ -76,7 +80,7 @@
         android:layout_marginTop="20dp"
         android:text="Forgot passwrod?"
         android:textColor="@color/white"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_btn" />
